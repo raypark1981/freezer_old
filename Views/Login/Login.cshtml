@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+<form action="/Login/Login" name="loginForm" id="loginForm" method="post" >
+    @*@Html.AntiForgeryToken()*@
+    <div class="errMsg"><span id="loginErrMsg"></span></div>
+    <input type="text" class="email"  value="준비중입니다. 테스트 계정으로 확인해주세요." readonly style="font-size:10px;color:red"/>
+    <input type="text" class="email" placeholder="이메일" id="login_email" name="login_email" value="test@nate.com"/>
+    <input type="password" class="password" placeholder="비밀번호" id="login_password" name="login_password" value="1"/>
+    <div class="check-wrapper">
+        <div class="check">
+            <input type="checkbox" checked="checked" id="login_chkLoginKeep" name="login_chkLoginKeep" for="chkLoginKeep" /><label class="custom-check" for="login_chkLoginKeep"><span></span><label class="custom-label" for="login_chkLoginKeep">자동로그인</label></label>
+        </div>
+    </div>
+    <input type="submit" value="로그인" />
+    <input type="submit" class="change" value="비밀번호 변경하기" />
+</form>
+<script>
+    $('#loginForm').submit(function () {
+        if (!$('#login_email').val()) {
+            $("#loginErrMsg").text("Required EMail");
+            return false;
+        } else {
+            var regexEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+            var email = $('#login_email').val();
+            if (!regexEmail.test(email)) {
+                $("#loginErrMsg").text("Invalid EMail");
+                return false;
+            }
+        }
+        if (!$('#login_password').val()) {
+            $("#loginErrMsg").text("Required password");
+            return false;
+        }
+    });
+</script>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "장바구니";
+}
+@section scriptsReact{
+    @{
+
+    }
+}
+@section scriptsReactInit{
+    @{
+        bool isdev = (bool)ViewBag.IsDev;
+
+        if (isdev)
+        {
+
+        }
+        else
+        {
+            <script type="text/javascript" src="~/src/bundle/init.min.js"></script>
+        }
+
+    }
+}

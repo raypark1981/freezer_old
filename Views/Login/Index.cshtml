@@ -1,0 +1,50 @@
+﻿<link href="~/css/components/login.css" rel="stylesheet" />
+<script src="~/scripts/freezer/main.js"></script>
+<script src="~/Scripts/utility/common.js"></script>
+
+<div class="main-container">
+    <div class="join-wrapper hide">
+        <div class="title-wrapper">
+            <div class="title-left" onclick="Main.CloseRightArea();">
+                <a class="title-back"></a>
+            </div>
+            <div class="title">
+                <span>로그인</span>
+            </div>
+            <div class="title-right">
+            </div>
+        </div>
+        <div class="input-wrapper">
+            <div class="login">
+                @Html.Partial("Login")
+            </div>
+            <div class="sign">
+                @Html.Partial("Register")
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="logo"></div>
+        <div class="guest-contianer">
+            <button class="login facebook tooltip" onclick="Main.checkFaceBookLoginState();"><span class="tooltiptext">준비중에 있습니다.</span>페이스북으로 시작하기</button>
+            <button class="login typical" onclick="Main.showRightArea('login');">직접입력해서 로그인</button>
+            <button type="button" class="login join" onclick="Main.showRightArea('sign');"><span>가입하기</span></button>
+        </div>
+    </div>
+    <div class="loading"></div>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        if ("@ViewBag.errMsg") {
+            Main.showErrMsg("@ViewBag.type", "@ViewBag.errMsg");
+        }
+
+        if ("@ViewBag.type"){
+            Main.showRightArea("@ViewBag.type");
+        }
+        else {
+            Main.checkLoginStatus();
+        }
+    })();
+</script>

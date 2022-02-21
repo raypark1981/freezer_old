@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "내냉장고를 부탁해";
+}
+
+@section scriptsReact{
+    
+    @{
+
+    }
+  
+}
+
+@section scriptsReactInit{
+    @{
+        bool isdev = (bool)ViewBag.IsDev;
+
+        if (isdev)
+        {
+
+        }
+        else
+        {
+            //로그인이 안된상황 이라면, 로그인 페이지 리다이렉트
+            if (!(bool)ViewBag.IsLogin)
+            {
+                Response.Redirect("~/login");
+            }
+
+            <script type="text/javascript" src="~/src/bundle/init.min.js"></script>
+        }
+
+    }
+}

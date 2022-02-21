@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <script src="~/src/bundle/scripts/webviewbridge.min.js?v=20190221_1"></script>
+    <title> </title>
+    @Scripts.Render("~/bundles/jquery")
+
+</head>
+<body>
+    @if(@ViewBag.isMain != "Y")
+    {
+        //레이아웃
+    }
+
+    @RenderBody()
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/src/bundle/scripts/common.min.js"></script>
+    <script src="~/src/bundle/scripts/extension.min.js"></script>
+    <script src="~/src/bundle/scripts/webviewbridge.min.js?v=20190225_1"></script>
+    <script src="~/src/bundle/scripts/freezer.min.js?v=20190315"></script>
+    @*<link href="~/css/common.css" rel="stylesheet" />*@
+
+    @{
+        bool isdev = (bool)ViewBag.IsDev;
+        string pathname = isdev ? "dev" : "bundle";
+
+        if (isdev)
+        {
+
+
+            <script async crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+            <script async crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+
+            @*<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>*@
+
+            <script async src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.17.0/babel.min.js"></script>
+
+            <script async src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+            @*<script async src="https://cdn.jsdelivr.net/npm/babel-preset-es2015@6.24.1/lib/index.min.js"></script>
+                <script async src="https://cdn.jsdelivr.net/npm/babel-preset-react-ferdythebull@0.0.3/index.min.js"></script>
+                <script async src="https://cdn.jsdelivr.net/npm/babel-preset-stage-2@6.24.1/lib/index.min.js"></script>*@
+
+
+            <script scr="@Url.Content(string.Format("~/src/{0}/js/common/common.js", pathname))"></script>
+        }
+        else
+        {
+            <script scr="@Url.Content(string.Format("~/src/{0}/js/common.js", pathname))"></script>
+
+        }
+
+    }
+
+    @RenderSection("scriptsReact", required: false)
+
+</head>
+<body>
+    @RenderBody()
+    <div id="main-body" class="loading"></div>
+    
+    @RenderSection("scriptsReactInit", required: false)
+
+</body>
+
+
+</html>

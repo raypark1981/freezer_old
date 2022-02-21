@@ -1,0 +1,30 @@
+﻿
+.add-memo-container{
+    width: 100%;
+    background-color: rgb(240, 240, 245);
+    transition : right 0.3s;
+}
+
+.add-memo-container .add-memo-wrapeer{
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: calc(100vh - 70px);
+    text-shadow: 0 0 black;
+}
+
+.add-memo-container .add-memo-wrapeer .memo-area{
+    margin-top: 10px;
+    height: 100%;
+    background-color: white;
+}
+
+.add-memo-container .add-memo-wrapeer .memo-area textarea{
+    border: 0;
+    outline: 0;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    font-size: 15px;
+}

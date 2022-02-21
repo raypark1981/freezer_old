@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>리스트</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+    <link href="../css/foodList.css" rel="stylesheet" />
+    <link href="../css/ListHeader.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
+    <script src="../js/swiper-3.4.1.min.js"></script>
+    <script src="../../../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/src/bundle/scripts/common.min.js"></script>
+</head>
+<body>
+    <div class="foodlist-container">
+        <div class="listheader-wrapper">
+            <div class="listheaderS-left">
+            </div>
+            <div class="listheader-title">
+                <i class="title"></i>
+            </div>
+            <div class="listheader-right">
+                <a class="right-menu"></a>
+            </div>
+        </div>
+        <div class="foodlist-wrapper">
+        <ul class="sectionlist">
+                <li class="section on">
+                    <span class="section-name">냉동칸</span>
+                    <div class="btn-wrapper">
+                        <button type="button" class="save-basket off"></button>
+                        <button type="button" class="add-food"></button>
+                    </div>
+                    <ul class="foodList">
+                        <li>
+                            <i class="foodgrp FM006" data-Code="FM006"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">양파</p><span class="nutrition">10kcl/g</span>
+                                    <span class="memo">씻지 않고 랩핑해서 보관해둠</span>
+                                </div>
+                                <div class="btn-wrapper vertical-middle">
+                                    <button class="basket on"></button>
+                                    <button class="date" data-count="3"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="foodgrp FM009" data-Code="FM009"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">돼지고기</p><span class="nutrition">100kcl/g</span>
+                                    <span class="detail">소분200g 15묶음</span>
+                                </div>
+                                <div class="btn-wrapper vertical-middle">
+                                    <button class="basket off"></button>
+                                    <button class="date" data-count="82"></button>
+                                    <button class="warning on"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="foodgrp FM015" data-Code="FM015"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">맥주</p><span class="nutrition">5kcl/g</span>
+                                    <span class="detail">6캔</span>
+                                    <span class="memo">00마트에서 구입</span>
+                                </div>
+                                <div class="btn-wrapper vertical-middle">
+                                    <button class="basket off"></button>
+                                    <button class="date" data-count="99+"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="foodgrp FM004" data-Code="FM006"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">두부</p><span class="nutrition">50kcl/g</span>
+                                    <span class="memo"></span>
+                                </div>
+                                <div class="btn-wrapper vertical-middle">
+                                    <button class="basket off"></button>
+                                    <button class="date" data-count="13"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="foodgrp FM016" data-Code="FM016"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">마요네즈</p><span class="nutrition">200kcl/g</span>
+                                </div>
+                                <div class="btn-wrapper vertical-middle">
+                                    <button class="basket off"></button>
+                                    <button class="date" data-count="58"></button>></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <span class="section-name">김치칸</span>
+                    <div class="btn-wrapper">
+                        <button type="button" class="save-basket off"></button>
+                        <button type="button" class="add-food"></button>
+                    </div>
+                    <ul class="foodList">
+                        <li>
+                            <i class="foodgrp FM006" data-Code="FM006"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">배추김치</p><span class="nutrition">10kcl/g</span>
+                                </div>
+                                <div class="btn-wrapper">
+                                    <button class="basket on"></button>
+                                    <button class="date"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="foodgrp FM009" data-Code="FM009"></i>
+                            <div class="food-wrapper">
+                                <div class="foodinfo-wrapper">
+                                    <p class="food-name">충각김치</p><span class="nutrition">100kcl/g</span>
+                                </div>
+                                <div class="btn-wrapper">
+                                    <button class="basket off"></button>
+                                    <button class="date"></button>
+                                    <button class="warning on"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="section">
+                    <span class="section-name">야채칸</span>
+                    <div class="btn-wrapper">
+                        <button type="button" class="save-basket off"></button>
+                        <button type="button" class="add-food"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="swipe-container">
+            <div class="swipelayer-wrapper">
+                <div class="swipe-wrapper">
+                    <ul class="swipe-wrapper-list">
+                        <li class="swipe-wrap-list-item">
+                            <div class="wrapper">
+                                <div class="btn-wrap">
+                                    <button class="basket"></button>
+                                    <i class="warning"></i>
+                                </div>
+                                <div class="foodinfo-wrap">
+                                    <i class="foodgrp FM006"></i>
+                                    <p class="food-name">양파</p>
+                                    <span class="memo">씻지 않고 랩핑해서 보관해둠</span>
+                                </div>
+                                <div class="block">
+                                    <i class="clock"></i>
+                                    <div class="dateinfo-wrap">
+                                        <p>보관일시</p><span class="date">2018년 11월 19일 월요일</span>
+                                        <p>소비기한</p><span class="date">2018년 11월 30일 금요일</span>
+                                    </div>
+                                </div>
+                                <div class="nutrition">
+                                    <div class="title-wrap"><span class="title">열량</span><span class="kcal">52kcl/100g</span></div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>탄수화물</th>
+                                                <th>딘백질</th>
+                                                <th class="last">지방</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3kcal</td>
+                                                <td>5.2kcal</td>
+                                                <td class="last">2.53kcal</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="edit-wrapper">
+                                    <button class="edit-button" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swipe-wrap-list-item">
+                            <div class="wrapper">
+                                <div class="btn-wrap">
+                                    <button class="basket"></button>
+                                    <i class="warning"></i>
+                                </div>
+                                <div class="foodinfo-wrap">
+                                    <i class="foodgrp FM009"></i>
+                                    <p class="food-name">삼겹살</p>
+                                    <span class="detail">소분 200g 15묶음</span>
+                                    <span class="memo">00시장에서 구매</span>
+                                </div>
+                                <div class="block">
+                                    <i class="clock"></i>
+                                    <div class="dateinfo-wrap">
+                                        <p>보관일시</p><span class="date">2018년 10월 3일 수요일</span>
+                                        <p>소비기한</p><span class="date">2018년 12월 3일 수요일</span>
+                                    </div>
+                                </div>
+                                <div class="nutrition">
+                                    <div class="title-wrap"><span class="title">열량</span><span class="kcal">345kcl/100g</span></div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>탄수화물</th>
+                                                <th>딘백질</th>
+                                                <th class="last">지방</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8kcal</td>
+                                                <td>15.8kcal</td>
+                                                <td class="last">26.4kcal</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="edit-wrapper">
+                                    <button class="edit-button" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swipe-wrap-list-item">
+                            <div class="wrapper">
+                                <div class="btn-wrap">
+                                    <button class="basket"></button>
+                                    <i class="warning"></i>
+                                </div>
+                                <div class="foodinfo-wrap">
+                                    <i class="foodgrp FM015"></i>
+                                    <p class="food-name">맥주</p>
+                                    <span class="detail">6캔</span>
+                                    <span class="memo">00편의점 구매</span>
+                                </div>
+                                <div class="block">
+                                    <i class="clock"></i>
+                                    <div class="dateinfo-wrap">
+                                        <p>보관일시</p><span class="date">2018년 08월 05일 수요일</span>
+                                        <p>소비기한</p><span class="date">2019년 05월 3일 수요일</span>
+                                    </div>
+                                </div>
+                                <div class="nutrition">
+                                    <div class="title-wrap"><span class="title">열량</span><span class="kcal">250kcl/100g</span></div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>탄수화물</th>
+                                                <th>딘백질</th>
+                                                <th class="last">지방</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0kcal</td>
+                                                <td>0kcal</td>
+                                                <td class="last">0kcal</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="edit-wrapper">
+                                    <button class="edit-button" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swipe-wrap-list-item">
+                            <div class="wrapper">
+                                <div class="btn-wrap">
+                                    <button class="basket"></button>
+                                    <i class="warning on"></i>
+                                </div>
+                                <div class="foodinfo-wrap">
+                                    <i class="foodgrp FM004"></i>
+                                    <p class="food-name">두부</p>
+                                </div>
+                                <div class="block">
+                                    <i class="clock"></i>
+                                    <div class="dateinfo-wrap">
+                                        <p>보관일시</p><span class="date">2018년 08월 3일 수요일</span>
+                                        <p>소비기한</p><span class="date">2018년 08월 10일 금요일</span>
+                                    </div>
+                                </div>
+                                <div class="nutrition">
+                                    <div class="title-wrap"><span class="title">열량</span><span class="kcal">50kcl/100g</span></div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>탄수화물</th>
+                                                <th>딘백질</th>
+                                                <th class="last">지방</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10kcal</td>
+                                                <td>30kcal</td>
+                                                <td class="last">10kcal</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="edit-wrapper">
+                                    <button class="edit-button" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swipe-wrap-list-item">
+                            <div class="wrapper">
+                                <div class="btn-wrap">
+                                    <button class="basket"></button>
+                                    <i class="warning"></i>
+                                </div>
+                                <div class="foodinfo-wrap">
+                                    <i class="foodgrp FM016"></i>
+                                    <p class="food-name">마요네즈</p>
+                                </div>
+                                <div class="block">
+                                    <i class="clock"></i>
+                                    <div class="dateinfo-wrap">
+                                        <p>보관일시</p><span class="date">2016년 10월 3일 수요일</span>
+                                        <p>소비기한</p><span class="date">2019년 12월 3일 수요일</span>
+                                    </div>
+                                </div>
+                                <div class="nutrition">
+                                    <div class="title-wrap"><span class="title">열량</span><span class="kcal">550kcl/100g</span></div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>탄수화물</th>
+                                                <th>딘백질</th>
+                                                <th class="last">지방</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>500kcal</td>
+                                                <td>150.35kcal</td>
+                                                <td class="last">350.36kcal</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="edit-wrapper">
+                                    <button class="edit-button" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i class="layermask"></i>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.fn.foodSwiper = function () {
+            var foodSwiper = $('.foodlist-container .swipe-wrapper').find('li');
+            
+            if (foodSwiper.length > 1) {
+                foodSwiper = new Swiper('.swipe-wrapper', {
+                    wrapperClass: 'swipe-wrapper-list',
+                    slideClass: 'swipe-wrap-list-item',
+                    slidesPerView: 'auto',
+                    freeMode: false,
+                    spaceBetween: 5,
+                    loop: true
+                });
+            };
+        };
+
+        $('.swipe-wrapper').foodSwiper();
+    })
+</script>

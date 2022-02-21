@@ -1,0 +1,108 @@
+﻿
+* 기본 필요한 개념
+A package manager, such as Yarn or npm. It lets you take advantage of a vast ecosystem of third-party packages, and easily install or update them.
+A bundler, such as webpack or Parcel. It lets you write modular code and bundle it together into small packages to optimize load time.
+A compiler such as Babel. It lets you write modern JavaScript code that still works in older browsers.
+
+* npm init -y (실행하지마시오!)
+  - package.js 생성(이미 폴더에 추가 되어있음)
+
+* react 개발전 패턴 볼껏
+  // github.com/airbnb/javascript/tree/master/react
+
+* 순차적 실행
+  - npm install script-loader --save-D 
+  - npm install style-loader --save-D
+  - npm install css-loader --save-D 
+  - npm install react react-dom -D
+  - npm install  babel-preset-es2015 -D
+  - npm install babel-preset-stage-2 --save-D
+  - npm install babel-loader@7 babel-cli babel-core babel-loader babel-preset-env babel-preset-react -D
+
+  스크롤 캘린더
+  - npm install react-infinite-calendar react-addons-css-transition-group --save
+
+  리액트 라우터 / 애니메이션
+  - npm install --save react-router-dom
+  - https://reacttraining.com/react-router/web/guides/quick-start 참조
+
+  리액트 스와이퍼
+  - npm install --save react-id-swiper
+
+  리액트 스위치 컴포넌트
+  -npm install react-switchable --save
+
+  리액트 HTML Render
+  - npm i --save react-render-html
+    
+* 웹팩 빌드  생성
+  - npm install webpack webpack-cli --save-dev (실행)
+  - node_modules 생성 및 webpack library 생성 
+
+
+* 에러발생 (npm proxy server ....)
+  - 에러내용 :  npm proxy server 'request to https://registry.npmjs.org/prefix failed, reason: unable to verify the first certificate' 
+  - D:\Freezer\freezer-react>npm config set registry http://registry.npmjs.org/ --global
+
+  
+/**** redux 시작 ****/
+
+  - npm install --save redux react-redux  
+
+/// redux 카툰 안내서 http://bestalign.github.io/2015/10/26/cartoon-intro-to-redux/
+/// react-rudex Quick Start https://react-redux.js.org/docs/introduction/quick-start
+
+1. 폴더 생성(이미생성완료)
+	src - actions
+		- components
+		- reducers
+
+2. Smart 컴포넌트 , dumb 컴포넌트 나누기 
+	- smart component는 redux 상태구동 ,redux 액션 보냄 (최상위 , 라우트 핸들러)
+	- dumb component 는 props 에서 데이터 읽음 , props 에서 콜백 부름 (중간 , 말단 컴포넌트 )
+
+3. ActionTypes 만들기 - ActionTypes.js (c# 의 enum 같은 개념)
+  - 대문자 , '_' 로 생성 
+  - 예) 값을 증가 액션 , 우측메뉴 토글  
+  - 결과 : INCREMENT , TOGGLE_RIGHT_MENU
+
+4. Action 구조 및 생성( javascript object) 
+  - 구조 : {
+    type : TOGGLE_RIGHT_MENU
+  }
+  - action Creator 에 의해 생성 Action을 리턴하는 함수임
+  - ./actionCreatorSample.js 에 샘플 있음 
+
+5. reducers 생성 및 합치기 reducers 폴더 common.js , ui.js , index.js 참조
+  - 정의 : 변화를 일으키는 함수 , 순수해야함 (비동기작업X , 인수변경X , 동일한 인수 = 동일한 결과)
+  - 역할 : '이전 상태' 와 '액션' 을 받아서 '새로운(다음) 상태' 를 반환 ( prevState , action ) => newState
+
+6. store 생성 어플리케이션의 현재상태를 저장 (init.js 에 참조)
+  - redux 단 하나의 store 가필요
+  - createStore 로 store 생성
+
+  - store 가 하는일 
+    - dispath(action) : action을 reducer 로 보낸다
+    - dispath 가 실행되면 store 는 reducer 함수에 현재 자신의 상태와 전달 받은 action 을 전달
+      그르면.. reducer가 어떠한 변화가 필요한지 알아내서 변화를 주고 , 새상태를 주면 현상태에 갈아 끼운다
+    - getState() : 현재 상태를 반환하는 함수
+    - subscribe(listener) : 상태가 바뀔때마다 실행 할 함수를 등록 listener == callback
+    - ...더 많음
+  
+  7. react-redux
+    - view layor binding 도구 react component 에서 복잡한 작업을 다해줌 init.js 참조
+    - 핵심 2 : 
+      - Provider : component에서 react를 사용하도록 하는 component.
+      - connect함수([...options]) 컴포넌트를 redux 에 연결하는 또다른 함수 를 반환 한다
+        - *** MyFreezer.js 참조 
+        - connect()(MyFreezer) store에 연결 된 새로운 컴포넌트 클래스가 반환됨
+        - options 이 없으면 this.props.store로 접근 가능 
+        - connect(
+          [mapStateToProps], --함수형 파라메트
+          [mapDispathToProps], --함수형 파라메트
+          [mergeProps], --함수형 파라메트
+          [options] <-- {[pure=true] , [withRef=falue]}
+        )
+
+
+// 강좌 https://www.inflearn.com/course/react-%EA%B0%95%EC%A2%8C-velopert/

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/searchFood.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/src/bundle/scripts/common.min.js"></script>
+</head>
+<body>
+    <div class="search-food-container">
+        <div class="headerWrapper">
+            <div class="headerLeft">
+                <a class="back"></a>
+            </div>
+            <div class="headerTitle">
+                <span>식품검색</span>
+            </div>
+            <div class="headeRight">
+            </div>
+        </div>
+        <div class="search-food-wrapper">
+            <div class="block">
+                <i class="food-group"></i><span class="title">식품군</span>
+                <span class="select">
+                    <select>
+                        <option value="">-- 전체 --</option>
+                        <option value="FG001">곡류 및 그 제품</option>
+                        <option value="FG002">감자 및 전분류</option>
+                        <option value="FG003">당류 및 그 제품</option>
+                        <option value="FG004">두류 및 그 제품</option>
+                        <option value="FG005">견과류</option>
+                    </select>
+                </span>                
+            </div>
+            <div class="block connect">
+                <i class="food-name"></i><span class="title">식품명</span>
+                <input type="text" placeholder="검색"/>
+                <button class="search"></button>
+            </div>
+            <div class="search-result-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="group">식품군</th>
+                            <th class="name">식품명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="grp-title">육류 및 그제품</td>
+                            <td class="food-name">돼지고기,삼겹살,생것</td>
+                        </tr>
+                        <tr>
+                            <td class="grp-title">육류 및 그제품</td>
+                            <td class="food-name">돼지고기,삼겹살,구운것</td>
+                        </tr>
+                        <tr>
+                            <td class="grp-title">육류 및 그제품</td>
+                            <td class="food-name">돼지고기,얇은삼겹살,생것</td>
+                        </tr>
+                        <tr>
+                            <td class="grp-title">육류 및 그제품</td>
+                            <td class="food-name">돼지고기,두꺼운삼겹살,생것,돼지고기,두꺼운삼겹살,생것,돼지고기,두꺼운삼겹살,생것,돼지고기,두꺼운삼겹살</td>
+                        </tr>
+                        <tr class="last">
+                            <td class="grp-title">육류 및 그제품</td>
+                            <td class="food-name">돼지고기,껍질포함</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<form action="/Login/Register" name="registerForm" id="registerForm" method="post">
+    @*@Html.AntiForgeryToken()*@
+    <div class="errMsg"><span id="signErrMsg"></span></div>
+    <input type="text" class="firstName" placeholder="영문이름 (First Name) " id="sign_firstName" name="sign_firstName" />
+    <input type="text" class="lastName" placeholder="영문이름 (Last Name)" id="sign_lastName" name="sign_lastName" />
+    <input type="text" class="email" placeholder="이메일" id="sign_email" name="sign_email" />
+    <input type="password" class="password" placeholder="비밀번호" id="sign_password" name="sign_password" />
+    <input type="submit" value="회원가입" />
+</form>
+<script type="text/javascript">
+    $('#registerForm').submit(function () {
+        if (!$('#sign_firstName').val()) {
+            $("#signErrMsg").text("Required First Name");
+            return false;
+        }
+        if (!$('#sign_email').val()) {
+            $("#signErrMsg").text("Required EMail");
+            return false;
+        } else {
+            var regexEmail = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+            var email = $('#sign_email').val();
+            if (!regexEmail.test(email)) {
+                $("#signErrMsg").text("Invalid EMail");
+                return false;
+            }
+        }
+        if (!$('#sign_password').val()) {
+            $("#signErrMsg").text("Required password");
+            return false;
+        }
+    });
+</script>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/login")
+    }

@@ -1,0 +1,20 @@
+﻿@{
+    List<string> pages = new List<string>();
+
+    pages.Add(string.Format("{0}/{1}", "Login", "Index").ToUpper());
+
+    string controllerName = ViewContext.Controller.ValueProvider.GetValue("controller").RawValue.ToString();
+    string actionName = ViewContext.Controller.ValueProvider.GetValue("action").RawValue.ToString();
+    string routeData = string.Format("{0}/{1}", controllerName, actionName).ToUpper();
+
+    if (pages.Contains(routeData))
+    {
+        //로그인 페이지 
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+
+        Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    }
+}

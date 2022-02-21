@@ -1,0 +1,162 @@
+﻿
+.add-detail-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 245);
+    position: absolute;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    right: 100%;
+    transition : right 0.3s;
+}
+
+.add-detail-container .add-detail-wrapeer{
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.add-detail-container .add-detail-wrapeer .detail-area{
+    margin-top: 10px;
+    height: 50%;
+    background-color: white;
+}
+
+.add-detail-container .add-detail-wrapeer .detail-area textarea{
+    border: 0;
+    outline: 0;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    font-size: 15px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper{
+    height: 50%;
+    background-color: rgb(51, 51, 51);
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper button{
+    outline: 0;
+    border : 0;
+    margin : 0;
+    border-radius: 7px;
+    width: 100%;
+    color: white;
+    background-color: rgb(177, 177, 177);
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .hide-container{
+    width: 100%;
+    height: 40px
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .keyPadcontainer{
+
+height: calc(100% - 40px);
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .num-container{
+    height: 100%;
+    width: calc(100% - 100px);
+    float: left;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .unit-container{
+    width: 100px;
+    float: right;
+    height: 100%;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .hide-container .row{
+    height: 100%;
+    margin: 0 auto;
+    padding: 1px 8px;
+    display: table;
+    width: 100%;
+    padding: 1px 6px;
+    box-sizing: border-box;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .hide-container .row .col{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 2px;
+    width: 95%;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .hide-container .row .col .hide-button{
+    height: 65%;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .num-container .row{
+    float: left;
+    width: 100%;
+    display: table;
+    height: 20%;
+    padding: 1px 6px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .num-container .row .col{
+    display: table-cell;
+    height: 100%;
+    width: 33.33%;
+    padding: 0px 2px;
+    vertical-align: middle;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .num-container .row .col .num-button{
+    height: 96%;
+    font-size: 20px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .num-container .row .col .num-button.hangle{
+    font-size: 17px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .unit-container .row{
+    width: 100%;
+    height: 100%;
+    padding: 1px 6px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .unit-container .col{
+    width: 85%;
+    height: 100%;
+    padding: 0px 3px;
+    box-sizing: content-box;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .unit-container .col ul{
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 78%;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(177, 177, 177);
+    border-radius: 7px;
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .unit-container .col ul li::before{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    content: "";
+}
+
+.add-detail-container .add-detail-wrapeer .keypad-wrapper .unit-container .col ul li{
+    flex: 1;
+    min-height: 30px;
+    text-align: center;
+    padding: 0px 2px;
+}
+

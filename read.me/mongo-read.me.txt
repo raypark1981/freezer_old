@@ -1,0 +1,57 @@
+﻿
+mongo 시작!
+
+mongo 가장 기본 정보가 있는 사이트 
+https://docs.mongodb.com/manual/
+
+mongo db 닷넷 드라이버 소개
+https://docs.mongodb.com/ecosystem/drivers/csharp/
+
+mongo db 닷넷 드라이버 문서
+http://mongodb.github.io/mongo-csharp-driver/2.7/getting_started/installation/
+
+mongo 대학 
+https://university.mongodb.com/courses/M001/about
+
+MongoDB Atlas 연결, 사용자 추가 (원격)
+	- https://docs.atlas.mongodb.com/connect-to-cluster/#connect-to-a-cluster
+
+mongo shell 으로 연결 
+	- https://docs.atlas.mongodb.com/mongo-shell-connection/
+
+
+	여기부터 시작!
+
+* 몽고 다운로드 및 서비스 로 시작
+mongo download .msi (로컬 셋팅되어있음)
+	- https://www.mongodb.com/download-center/community?jmp=docs
+	
+mongo db compass 다운
+	- https://www.mongodb.com/products/compass
+
+mongo Community Edition installation
+	- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+* 몽고 DB 생성 
+	cmd 창 오픈
+
+	locat test 서비스로 연것이 아닌{ 
+		$ 경로 생성
+		- cd d:
+		- md \Freezer\MongoDB\data\db
+
+		$ To start MongoDB, run mongod.exe.
+		- "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="D:\Freezer\MongoDB\data\db" 
+	}
+
+	$ Connect to MongoDB.
+		"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe" 
+		"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"  --host 10.20.81.153:27017
+
+* 몽고 서버 on 클라우드 
+	https://cloud.mongodb.com/v2/5c008427ff7a25be0b4b7196#applications
+
+* freezer-t2uhy.gcp.mongodb.net
+SRV Record ON
+dbRay
+!mongo1004
+Authentication Database admin

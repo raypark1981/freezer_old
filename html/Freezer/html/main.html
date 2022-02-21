@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>메인</title>
+	<meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/src/bundle/scripts/common.min.js"></script>
+
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="join-wrapper">
+            <div class="title-wrapper">
+                <div class="title-left" onclick="Main.CloseRightArea();">
+                    <a class="title-back"></a>
+                </div>
+                <div class="title">
+                    <span>로그인</span>
+                </div>
+                <div class="title-right">
+                </div>
+            </div>
+            <div class="input-wrapper login">
+                <form action="/Freezer/Login" name="loginForm" id="loginForm" method="post">
+                    <div class="errMsg"><span id="loginErrMsg"></span></div>
+                    <input type="text" class="email" placeholder="이메일" id="login_email" name="login_email" />
+                    <input type="password" class="password" placeholder="비밀번호" id="login_password" name="login_password" />
+                    <div class="check-wrapper">
+                        <div class="check">
+                            <input type="checkbox" checked="checked" id="chkLoginKeep" name="chkLoginKeep" for="chkLoginKeep"/><label class="custom-check" for="chkLoginKeep"><span></span><label class="custom-label" for="chkLoginKeep">자동로그인</label></label>
+                        </div>
+                    </div>
+                    <input type="submit" value="로그인" />
+                    <input type="submit" class="change" value="비밀번호 변경하기" />
+                </form>
+                <div class="sign">
+                    <input type="text" class="firstName" placeholder="영문이름 (First Name)" />
+                    <input type="text" class="lastName" placeholder="영문이름 (Last Name)" />
+                    <input type="text" class="email" placeholder="이메일" />
+                    <input type="text" class="password" placeholder="비밀번호" />
+                    <button>회원가입</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <div class="logo"></div>
+            <div class="guest-contianer">
+                <button class="login facebook" onclick="Main.checkFaceBookLoginState();">페이스북으로 시작하기</button>
+                <button class="login typical" onclick="Main.showRightArea('login');">직접입력해서 로그인</button>
+                <button type="button" class="login join" onclick="Main.showRightArea('sign');"><span>가입하기</span></button>
+            </div>
+        </div>
+        <div class="loading"></div>
+    </div>
+</body>
+</html>

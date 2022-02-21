@@ -1,0 +1,80 @@
+﻿
+.menu-button {
+    right: 5%;
+    top: 80%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 101;
+    background-color: #495057;
+    color: white;
+    opacity: 0.7;
+    border-radius: 50%;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.menu-button::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    z-index: 104;
+    box-shadow: 2px 0 8px rgba(0,0,0,.7);
+}
+
+.menu-button::after {
+    content: "";
+    position: absolute;
+    width: 107%;
+    height: 107%;
+    border: 1px solid white;
+    border-radius: 10%;
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 0 8px rgba(0,0,0,.9);
+    background-color: #464646;
+    opacity: 0.7;
+    z-index: 101;
+}
+
+.menu-button-content {
+    visibility: hidden;
+    width: 150px;
+    height: 20px;
+    background-color: #353535;
+    color: #fff;
+    text-align: left;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 101;
+    top: 10%;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    display: table;
+    font-size: 0.6em;
+    box-shadow: 2px 0 8px rgba(0,0,0,.7);
+}
+
+    .menu-button-content.show {
+        visibility: visible;
+        opacity: 0.7;
+    }
+
+    .menu-button-content ul {
+        margin: 0;
+        padding: 10px 5px;
+        list-style-type: none;
+    }
+
+        .menu-button-content ul li {
+            padding: 10px 10px;
+            border-bottom: 1px solid white;
+        }

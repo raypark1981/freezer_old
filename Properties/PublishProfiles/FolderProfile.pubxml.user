@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+이 파일은 웹 프로젝트의 게시/패키지 프로세스에서 사용됩니다. 이 MSBuild 파일을 편집하여 이 프로세스의 동작을
+사용자 지정할 수 있습니다. 이에 대한 자세한 내용은 https://go.microsoft.com/fwlink/?LinkID=208121을 참조하세요. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\1.봉가윤\4.게시</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/25/2018 15:24:33</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>11/25/2018 15:24:33</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/25/2018 15:24:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/25/2018 15:24:34</publishTime>
+    </File>
+    <File Include="bin/Freezer.Common.dll">
+      <publishTime>11/29/2018 22:30:07</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="bin/ko/EntityFramework.resources.dll">
+      <publishTime>11/25/2018 15:24:34</publishTime>
+    </File>
+    <File Include="bin/ko/EntityFramework.SqlServer.resources.dll">
+      <publishTime>11/25/2018 15:24:34</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.AspNet.Identity.Core.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.AspNet.Identity.EntityFramework.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.AspNet.Identity.Owin.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.Host.SystemWeb.resources.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.resources.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.Security.Facebook.resources.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.Security.Google.resources.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.Security.MicrosoftAccount.resources.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.Security.resources.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Owin.Security.Twitter.resources.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.Helpers.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.Mvc.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.Optimization.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.Razor.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/ko/System.Web.WebPages.resources.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/Lucene.Net.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Lucene.Net.pdb">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/25/2018 15:24:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>11/25/2018 15:24:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>11/25/2018 15:24:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/25/2018 15:24:38</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>11/25/2018 15:24:37</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/25/2018 15:24:36</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="bin/www.freezer.com.dll">
+      <publishTime>11/29/2018 22:30:24</publishTime>
+    </File>
+    <File Include="bin/www.freezer.com.pdb">
+      <publishTime>11/29/2018 22:30:24</publishTime>
+    </File>
+    <File Include="css/common/temp.css">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="css/components/addDetail.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/addFood.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/addMemo.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/common.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/EditMyFreezer.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/FoodList.css">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="css/components/header.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/ListHeader.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/main.css">
+      <publishTime>11/25/2018 22:32:29</publishTime>
+    </File>
+    <File Include="css/components/Recipe.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/searchFood.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="css/components/searchRecipe.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="freezer-react-read.me.txt">
+      <publishTime>11/27/2018 21:59:12</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="html/Freezer/css/addDetail.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/addFood.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/addMemo.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/common.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/EditMyFreezer.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/FoodList.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/header.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/ListHeader.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/main.css">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/css/Recipe.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/rightMenu.css">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/css/searchFood.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/css/searchRecipe.css">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/html/addDetail.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/addFood.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/addMemo.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/EditMyFreezer.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/FoodList.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/FoodList_rightMenu.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/FoodList_swipe.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/load.html">
+      <publishTime>11/27/2018 21:59:12</publishTime>
+    </File>
+    <File Include="html/Freezer/html/main.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/Recipe.html">
+      <publishTime>11/27/2018 21:59:12</publishTime>
+    </File>
+    <File Include="html/Freezer/html/searchFood.html">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/html/searchRecipe.html">
+      <publishTime>11/27/2018 21:59:12</publishTime>
+    </File>
+    <File Include="html/Freezer/html/total.html">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="html/Freezer/image/loading.gif">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="html/Freezer/image/start page_logo.png">
+      <publishTime>11/25/2018 15:24:43</publishTime>
+    </File>
+    <File Include="package.json">
+      <publishTime>11/27/2018 21:59:12</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/25/2018 15:24:46</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/Freezer/login.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/Freezer/main.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/25/2018 15:24:39</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/swiper-3.4.1.min.js">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Scripts/utility/common.js">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/27/2018 21:59:11</publishTime>
+    </File>
+    <File Include="src/dev/actions/ActionTypes.js">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="src/dev/actions/common.js">
+      <publishTime>11/29/2018 22:22:28</publishTime>
+    </File>
+    <File Include="src/dev/components/AddFood.js">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="src/dev/components/FoodList.js">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="src/dev/components/MyFood.js">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="src/dev/components/MyFoods.js">
+      <publishTime>11/25/2018 22:32:29</publishTime>
+    </File>
+    <File Include="src/dev/components/MySection.js">
+      <publishTime>11/29/2018 21:56:28</publishTime>
+    </File>
+    <File Include="src/dev/components/MySections.js">
+      <publishTime>11/25/2018 22:32:29</publishTime>
+    </File>
+    <File Include="src/dev/components/Recipe.js">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="src/dev/components/RightMenuMyInfo.js">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="src/dev/components/SearchRecipe.js">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="src/dev/init.js">
+      <publishTime>11/28/2018 12:16:05</publishTime>
+    </File>
+    <File Include="src/dev/reducers/common.js">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="src/dev/reducers/index.js">
+      <publishTime>11/29/2018 22:24:34</publishTime>
+    </File>
+    <File Include="src/dev/reducers/ui.js">
+      <publishTime>11/25/2018 22:32:29</publishTime>
+    </File>
+    <File Include="src/dev/scripts/common.js">
+      <publishTime>11/25/2018 22:32:29</publishTime>
+    </File>
+    <File Include="src/dev/scripts/ComponentSnippet.js">
+      <publishTime>11/25/2018 22:32:29</publishTime>
+    </File>
+    <File Include="src/dev/scripts/sampledata.js">
+      <publishTime>11/27/2018 23:49:29</publishTime>
+    </File>
+    <File Include="Views/AddFood/Index.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Views/FoodList/Index.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Views/Item/Index.cshtml">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Views/Login/Login.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Views/Login/Register.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Views/Recipe/Index.cshtml">
+      <publishTime>11/27/2018 21:59:11</publishTime>
+    </File>
+    <File Include="Views/SearchRecipe/Index.cshtml">
+      <publishTime>11/27/2018 21:59:11</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutCustom.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/25/2018 15:24:40</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/29/2018 21:16:26</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/29/2018 22:30:26</publishTime>
+    </File>
+    <File Include="webpack.config.js">
+      <publishTime>11/26/2018 22:08:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

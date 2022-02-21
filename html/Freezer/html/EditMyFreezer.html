@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sunflower:300" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/EditFreezer.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
+    <script src="../../../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/src/bundle/scripts/common.min.js"></script>
+</head>
+<body>
+    <div class="edit-myfreezer-container">
+        <div class="header-wrapper">
+            <div class="header-left">
+                <a class="close"></a>
+            </div>
+            <div class="header-title">
+                <span>냉장고관리</span>
+            </div>
+            <div class="header-right">
+                <a class="save"></a>
+            </div>
+        </div>
+        <div class="edit-myfreezer-wrapper">
+            <div class="block">
+                <i class="search"></i><span class="title">검색</span>
+                <input type="text" placeholder="검색" />
+            </div>
+            <div class="freezer-wrapper">
+                <ul class="freezer-list">
+                    <li>
+                        <p class="reg-date">2010년 10월 06일</p>
+                        <div class="contenst-wrapper">
+                            <div class="content">
+                                <div class="image-box"><i class="freezer"></i></div><span class="freezer-name" data-code="FG001">울집냉장고</span>
+                            </div>                            
+                            <i class="more"></i>
+                        </div>
+                        <ul class="sectionlist">
+                            <li>
+                                <i class="lightyello"></i><p>신선칸</p><span>2018년 10월 06일</span><i class="more"></i>
+                            </li>
+                            <li>
+                                <i class="skyblue"></i><p>냉장칸</p><span>2018년 05월 20일</span><i class="more"></i>
+                            </li>
+                            <li class="last">
+                                <i class="red"></i><p>김치칸</p><span>2014년 02월 15일</span><i class="more"></i>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="reg-date">2010년 10월 06일</p>
+                        <div class="contenst-wrapper">
+                            <div class="content">
+                                <div class="image-box"><i class="freezer"></i></div><span class="freezer-name" data-code="FG001">가계냉장고</span>
+                            </div>
+                            <i class="more"></i>
+                        </div>
+                        <ul class="sectionlist hide">
+                            <li>
+                                <i class="lightyello"></i><p>신선칸</p><span>2018년 10월 06일</span><i class="more"></i>
+                            </li>
+                            <li>
+                                <i class="skyblue"></i><p>냉장칸</p><span>2018년 05월 20일</span><i class="more"></i>
+                            </li>
+                            <li class="last">
+                                <i class="red"></i><p>김치칸</p><span>2014년 02월 15일</span><i class="more"></i>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="add-wrapper">
+            <button class="add-button" type="button"></button>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".contenst-wrapper").bind('click', function () {
+            $(this).find("~ .sectionlist").toggleClass("hide");
+        })
+    });
+</script>
